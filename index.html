@@ -13,108 +13,128 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+    <!-- STYLESHEET -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div class="container-main">
-
         <header role="banner">
-            <nav role="navigation">
-                <ul class="links-list">
-                    <li>
-                        <a href="#about-me">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="">Skills</a>
-                    </li>
-                    <li>
-                        <a href="">Education</a>
-                    </li>
-                    <li>
-                        <a href="#contact-me">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <h1>Hi, I'm Brittany...</h1>
-            <h2>Coding enthusiast and frontend developer with a passion for bringing beautiful interfaces to consumers.</h2>
+            <div class="container">
+                <nav role="navigation">
+                    <ul class="links-list">
+                        <li>
+                            <a href="#about-me">About</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="">Skills</a>
+                        </li>
+                        <li>
+                            <a href="">Education</a>
+                        </li>
+                        <li>
+                            <a href="#contact-me">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1>
+                    Hi, I'm Brittany.
+                </h1>
+                <h2>Coding enthusiast and frontend developer with a passion for bringing beautiful interfaces to consumers.</h2>
+            </div>
         </header>
 
         <!-- ABOUT ME SECTION -->
         <section id="about-me">
-            <h2>About Me</h2>
-            <p>A recent Mathematics graduate, my passion for software development began the second I took my first CS course,
-                and I haven't stopped coding since. Although I appreciate the technical side of things, I just as much enjoy
-                the design aspect and making sure things look as smoothly as they work and have a passion for bringing life-enhancing
-                products and useful apps to people all over the world! When not pouring into my various projects, I can be
-                found on an airplane, at a concert, or chasing around my mischeivous Daisy in the backyard.</p>
+            <div class="container">
+                <h2>About Me</h2>
+                <p>A recent Mathematics graduate, my passion for software development began the second I took my first CS course,
+                    and I haven't stopped coding since. Although I appreciate the technical side of things, I just as much
+                    enjoy the design aspect and making sure things look as smoothly as they work and have a passion for bringing
+                    life-enhancing products and useful apps to people all over the world! When not pouring into my various
+                    projects, I can be found on an airplane, at a concert, or chasing around my mischeivous Daisy in the
+                    backyard.
+                </p>
+            </div>
         </section>
 
         <!-- PROJECTS SECTION -->
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <img src="./assets/images/quiz-app.png" alt="Quiz App">
-                <h3>Quiz App</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>jQuery</li>
-                </ul>
-                <p>This project takes the user through a series of questions testing their knowledge of everyone's favorite
-                    show, Keeping Up With the Kardashians! How high can you score?</p>
-                <div>
-                    <a target="_blank" href="https://github.com/thinkful-ei-jaguar/quizAppJayeBrittany">View Source Code</a>
-                    <a target="_blank" href="https://thinkful-ei-jaguar.github.io/quizAppJayeBrittany/">Check It Live!</a>
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <img src="./assets/images/quiz-app.png" alt="Quiz App">
+                    <div class="project-content">
+                        <h3>Quiz App</h3>
+                        <ul class="tech-stack">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>jQuery</li>
+                        </ul>
+                        <p>This project takes the user through a series of questions testing their knowledge of everyone's favorite
+                            show, Keeping Up With the Kardashians! How high can you score?</p>
+                        <div class="links">
+                            <a target="_blank" href="https://github.com/thinkful-ei-jaguar/quizAppJayeBrittany">View Source Code</a>
+                            <a target="_blank" href="https://thinkful-ei-jaguar.github.io/quizAppJayeBrittany/">Check It Live!</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- SKILLS SECTION -->
         <section id="skills">
-            <h2 class="heading">Skills</h2>
-            <div class="skills-box">
-                <ul id="skills-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>Responsive Web Design</li>
-                    <li>Bootstrap</li>
-                    <li>jQuery</li>
-                    <li>DOM Manipulation</li>
-                    <li>React</li>
-                    <li>Redux</li>
-                </ul>
+            <div class="container">
+                <h2 class="heading">Skills</h2>
+                <div class="skills-box">
+                    <ul id="skills-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Responsive Web Design</li>
+                        <li>Bootstrap</li>
+                        <li>jQuery</li>
+                        <li>DOM Manipulation</li>
+                        <li>React</li>
+                        <li>Redux</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
 
         <!-- CONTACT ME SECTION -->
         <section id="contact-me">
-            <h2 class="heading">Contact Me</h2>
-            <form action="" method="POST">
-                <fieldset>
-                    <legend>Get In Touch!</legend>
+            <div class="container">
+                <h2 class="heading">Contact Me</h2>
+                <form action="" method="POST">
+                    <fieldset>
+                        <legend>Get In Touch!</legend>
 
-                    <div class="form-group">
-                        <label for="contact-name">Your Name</label>
-                        <input type="text" class="form-control" id="contact-name" aria-describedby="contact-name" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-email">Your Email Address</label>
-                        <input type="email" class="form-control" id="contact-email" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-message">Your Message</label>
-                        <textarea cols="30" rows="10" class="form-control" id="contact-message" placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </fieldset>
-            </form>
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" class="form-control" id="contact-name" aria-describedby="contact-name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Your Email Address</label>
+                            <input type="email" class="form-control" id="contact-email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Your Message</label>
+                            <textarea cols="30" rows="10" class="form-control" id="contact-message" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
         </section>
+
     </div>
 
     <script src="./index.js" async defer></script>
