@@ -20,10 +20,17 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Muli', sans-serif;
     padding: 0;
 }
+
+.section h2 {
+    margin-bottom: 5%; 
+}
+
 p {
     font-family: 'Noto Serif', serif;
     line-height: 1.45; 
     font-size: 1.4rem; 
+    color: #666666;
+    text-align: center;
 }
 
 .container-main {
@@ -73,14 +80,14 @@ section h2 {
     position: relative;
 }
 section h2::after {
-    content: '';
+    /* content: '';
     position: absolute;
     height: 5px;
-    background-color: #143C80;
-    left: 15%;
-    width: 60%; 
-    bottom: -20px;
-    margin: 0 auto 4% auto;
+    background-color: #6AAAFF;
+    left: 30%;
+    width: 40%; 
+    bottom: -20%;
+    margin: 20% auto; */
 }
 
 /* PROJECTS SECTION */
@@ -89,11 +96,11 @@ section h2::after {
     flex-direction: column; 
     width: 90%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
-    padding: 2%;
+    padding: 4%;
     text-align: center;
     align-items: center;
     background-color: white; 
-    margin: 0 auto;  
+    margin: 2% auto;  
 }
 
 .project .links {
@@ -106,4 +113,35 @@ section h2::after {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 2% auto;
+}
+.project-content {
+    color: #666666; 
+}
+.project-content h3 {
+    font-size: 2rem; 
+    margin: 2% auto;
+}
+.project-content img {
+    width: 100%; 
+}
+.project-content p {
+    margin: 2% auto; 
+}
+
+.tech-stack li, .skills-list li {
+    background-color: #f2f2f5;
+    padding: 4%;
+    margin: 3% auto; 
+}
+.skills-list li {
+    display: inline-block;
+}
+
+.skills-list {
+    margin: 2% auto; 
+    text-align: center; 
+}
+.skills-box {
+    margin: 0 auto; 
 }
