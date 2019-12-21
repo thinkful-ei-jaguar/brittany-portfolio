@@ -19,6 +19,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Muli', sans-serif;
     padding: 0;
+    color: #666666;
 }
 
 .section h2 {
@@ -144,4 +145,45 @@ section h2::after {
 }
 .skills-box {
     margin: 0 auto; 
+}
+
+/***** CONTACT ME SECTION *****/
+
+fieldset {
+    border: none; 
+    display: flex;
+    flex-direction: column; 
+}
+
+form {
+    text-align: center; 
+}
+.form-group {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    margin: 4% auto; 
+}
+
+input, textarea {
+    width: 80%;
+    margin: 2% auto;
+    border: 1px solid #f2f2f5;
+    padding: 2%; 
+    font-size: 1.5rem; 
+}
+label {
+    font-size: 1.5rem; 
+}
+
+legend {
+    font-size: 2rem; 
+}
+.btn {
+    margin: 0 auto;
+    padding: 5%;
+    border: 1px solid #f2f2f5; 
+    width: 80%;
+    background-color: #6AAAFF;
+    font-size: 1.5rem;
 }
