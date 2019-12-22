@@ -13,6 +13,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.12.0-web/css/all.css">
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
@@ -23,9 +25,12 @@
 <body>
     <div class="container-main">
         <header role="banner">
-            <div class="container">
-                <nav role="navigation">
-                    <ul class="links-list">
+            <nav role="navigation">
+                <div class="nav-container">
+                    <span class="hidden-large js-toggle-menu toggle-menu">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                    <ul class="hidden-small js-nav-menu nav-menu links-list">
                         <li>
                             <a href="#about-me">About</a>
                         </li>
@@ -42,7 +47,9 @@
                             <a href="#contact-me">Contact</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
+            </nav>
+            <div class="container">
                 <h1>
                     Hi, I'm Brittany.
                 </h1>
@@ -55,11 +62,13 @@
             <div class="container">
                 <h2>About Me</h2>
                 <p>A recent Mathematics graduate, my passion for software development began the second I took my first CS course,
-                    and I haven't stopped coding since. Although I appreciate the technical side of things, I just as much
-                    enjoy the design aspect and making sure things look as smoothly as they work and have a passion for bringing
-                    life-enhancing products and useful apps to people all over the world! When not pouring into my various
-                    projects, I can be found on an airplane, at a concert, or chasing around my mischeivous Daisy in the
-                    backyard.
+                    and I haven't stopped coding since.</p>
+                <p>Although I appreciate the technical side of things, I just as much enjoy the design aspect and making sure
+                    things look as smoothly as they work and have a passion for bringing life-enhancing products and useful
+                    apps to people all over the world!</p>
+                <p>When not pouring into my various projects, I can be found on an airplane, at a concert, or chasing around
+                    my mischievous Daisy in the backyard.
+                </p>
                 </p>
             </div>
         </section>
@@ -135,8 +144,32 @@
             </div>
         </section>
 
+        <!--FOOTER -->
+        <footer>
+            <div class="container">
+                <ul class="links-list">
+                    <li class="social-link github-link">
+                        <a target="_blank" href="https://www.github.com/bjs1400">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="social-link linkedin-link">
+                        <a target="_blank" href="https://www.linkedin.com/in/brittany-saucedo/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="social-link email-link">
+                        <a href="mailto:brisau1400@gmail.com">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/fontawesome-free-5.12.0-web/js/all.js"></script>
     <script src="./index.js" async defer></script>
 </body>
 
