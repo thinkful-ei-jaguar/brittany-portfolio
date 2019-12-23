@@ -52,6 +52,7 @@ img {
 /** HEADER **/
 header {
     background-color: #6AAAFF;
+    position: relative; 
 }
 
 #projects, #contact-me {
@@ -112,16 +113,27 @@ section h2 {
     margin: 4% auto; 
     position: relative;
 }
-section h2::after {
-    /* content: '';
+.lead-down {
     position: absolute;
-    height: 5px;
-    background-color: #6AAAFF;
-    left: 30%;
-    width: 40%; 
-    bottom: -20%;
-    margin: 20% auto; */
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 2%; 
+    z-index: 10;
+    margin: 0 auto;
+    text-align: center; 
+    font-size: 2.5rem; 
+    color: black; 
 }
+#lead-down-btn {
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 50; 
+    color: black; 
+}
+
 /* ABOUT ME SECTION */
 #about-me p {
     margin-bottom: 4%; 
@@ -332,3 +344,23 @@ footer {
         width: 80%;
     }
 }
+/************
+** KEYFRAMES
+*************/
+@keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-7px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(7px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
